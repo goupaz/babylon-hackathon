@@ -1,6 +1,6 @@
 import unittest
 
-from CryptoWerk import CryptoWerk
+from cryptowerk import CryptoWerk
 
 
 class TestCryptoWerk(unittest.TestCase):

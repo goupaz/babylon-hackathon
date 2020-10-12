@@ -8,12 +8,9 @@ CRYPTOWERK_SECRET = os.getenv("CRYPTOWERK_SECRET")
 
 
 class CryptoWerk():
-
     base_url = "https://developers.cryptowerk.com/platform/API/v8"
-
     def __init__(self):
         pass
-
     def register(self, data_hash):
         register_url = f"{self.base_url}/register"
         data = {"hashes": data_hash}
@@ -31,7 +28,7 @@ class CryptoWerk():
         verify_url = f"{self.base_url}/verify"
         data = {"retrievalId": retrieval_id}
         response = None
-
+        
         try:
             response = self.make_request(verify_url, data)
 
